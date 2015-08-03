@@ -1,0 +1,443 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('font/fontello.eot?76856833');
+  src: url('font/fontello.eot?76856833#iefix') format('embedded-opentype'),
+       url('font/fontello.woff?76856833') format('woff'),
+       url('font/fontello.ttf?76856833') format('truetype'),
+       url('font/fontello.svg?76856833#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?76856833#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-facebook:before { content: '\e800'; } /* '' */
+.icon-twitter:before { content: '\e801'; } /* '' */
+.icon-pinterest:before { content: '\e802'; } /* '' */
+.icon-linkedin:before { content: '\e803'; } /* '' */
+.icon-instagram-filled:before { content: '\e804'; } /* '' */
+.icon-search:before { content: '\e805'; } /* '' */
+
+.hidden, #hidden{
+    display: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+body, html {
+    font-weight: 100;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    color: #eef1eb;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+}
+
+*:focus {
+    outline: 0;
+}
+
+li{
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, ul {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*=================================================================
+main
+===================================================================*/
+
+header{
+    padding: 20px 0;
+    position: relative;
+}
+.logo{
+    width: 80px;
+}
+
+main{
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1080px;
+}
+.owl-item img {
+    width: 100%;
+}
+.logo, nav, nav li{
+   display: inline-block;
+    vertical-align: middle;
+}
+nav {
+    background: rgba(0, 0, 0, 0.11);
+    display: block;
+    height: 60px;
+    text-align: center;
+    vertical-align: bottom;
+    transition: all 600ms ease-out;
+    -webkit-transition: all 600ms ease-out;
+    -moz-transition: all 600ms ease-out;
+}
+nav li{
+    padding: 0 10px;
+    margin: 4px 11px;
+}
+
+nav li a{
+    font-size: 14px;
+}
+
+.network{
+    bottom: 0;
+    color: #000;
+    padding: 25px 0;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 800px) {
+    nav li {
+        display: block;
+        padding: 10px;
+    }
+    nav {
+        position: fixed;
+        z-index: 100;
+        background-color: white;
+        padding: 20px;
+        top: 0;
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+        -moz-transform: translateX(200px);
+        right: 0;
+        height: 100%;
+    }
+    footer li{
+        display: block;
+    }
+    .button-nav{
+        display: block;
+        padding: 8px 10px;
+        position: fixed;
+        right: 6px;
+        box-shadow: 0px 0px 5px rgb(165, 165, 165);
+        top: 10px;
+        cursor: pointer;
+        transition: all 600ms ease-out;
+        -webkit-transition: all 600ms ease-out;
+        -moz-transition: all 600ms ease-out;
+    }
+    .button-nav span{
+        background: #000000;
+        display: block;
+        margin: 5px;
+        height: 4px;
+        width: 30px;
+    }
+    .logo {
+        margin-left: 10px;
+    }
+    .network {
+        right: 10px;
+    }
+
+}
+.translateButtonNav{
+    transform: translateX(-200px);
+}
+.positionOriginal{
+    transform: translateX(0);
+}
+
+.network{
+    position: relative;
+    width: 100%;
+    text-align: end;
+}
+
+.network a, .network p{
+    display: inline-block;
+
+}
+
+.network p{
+    margin-right: 20px
+}
+
+.network span{
+    background: black;
+    border-radius: 15px;
+    color: white;
+    display: block;
+    font-size: 13px;
+    height: 23px;
+    margin: 1px;
+    padding-top: 4px;
+    width: 23px;
+    text-align: center;
+
+}
+
+#search{
+    float: right;
+    width: 200px;
+}
+
+.search-input{
+    border: 1px solid rgba(23, 20, 20, 0.29);
+    border-radius: 2px;
+    color: black;
+    display: block;
+    font-size: 14px;
+    float: right;
+    height: 20px;
+    margin-left: 25px;
+    position: absolute;
+    padding-left: 2px;
+    width: 170px;
+}
+
+#ico-search{
+    left: -5px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 2px;
+    z-index: 2;
+
+
+}
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: black;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: black;
+}
+
+:-ms-input-placeholder {
+    color: black;
+}
+
+#line{
+    background-color: rgba(0, 0, 0, 0.77);
+    height: 10px;
+}
+
+.nav-menu{
+    padding-top: 15px;
+}
+
+.logo{
+    left: 10px;
+    position: absolute;
+    top: 82px;
+    width: 100px;
+}
+
+.nav-footer{
+    background: url("../images/shadow.png");
+    background-size: contain;
+    height: 4px;
+}
+
+.home{
+    margin-top: -20px;
+}
+
+
+/*============================================================
+    FOOTER
+============================================================*/
+
+footer{
+    background: #303132;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    max-width: 1080px;
+    width: 100%;
+}
+footer li{
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+}
+footer a{
+    color: white;
+    padding: 10px;
+}
+
+
+/*============================================================
+    SLIDER
+============================================================*/
+.owl-next,.owl-prev{
+    position: absolute;
+    top: 50%;
+    color: rgb(128, 128, 128);
+    margin: -20px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 4px 11px 7px;
+    line-height: 0;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+.owl-next{
+    right: 0;
+}
+
+/*=============================================================
+ POP UP
+ ============================================================*/
+
+.pop-up{
+    background: rgba(0, 0, 0, 0.73);
+    left: 0;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.pop-up-menu{
+    background: white;
+    margin: 130px auto;
+    width: 800px;
+}
+
+.pop-up-nav-menu{
+    padding: 0 20px;
+}
+
+.pop-up-nav-menu ul{
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+.pop-up-nav-menu li{
+    display: inline-block;
+    margin: 16px 7px;
+    padding: 0 10px;
+    vertical-align: top;
+}
+
+.pop-up-menu section{
+    display: inline-block;
+    padding: 25px;
+    vertical-align: top;
+    width: 20%;
+}
+
+.pop-up-menu section p{
+    color: black;
+    font-size: 13px;
+    margin-bottom: 45px;
+}
+
+.slider-menu{
+    display: inline-block;
+    margin: 62px 38px;
+    padding: 34px 0px 0 0;
+    vertical-align: top;
+    width: 370px;
+}
+
+.pop-up-menu section a{
+    display: block;
+    font-size: 13px;
+    margin: 16px 0;
+}
+
+.pop-up-hover {
+    color: black!important;
+}
+
+.pop-up-nav-menu a{
+    color: rgba(0, 0, 0, 0.34);
+}
+
+.flecha_abajo{
+    left: 42px;
+    position: relative;
+    width: 27px;
+}
+
+.back{
+    cursor: pointer;
+    position: relative;
+    top: -120px;
+}
+
+.next{
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: -120px;
+}
