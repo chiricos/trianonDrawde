@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>zebra studio</title>
+    <title>Trianon</title>
     <meta charset="utf-8">
     <meta name="author" content="Drawde"/>
     <meta name="description" content="zebra studio"/>
@@ -108,11 +108,9 @@
             </li>
         </section>
         <div class="slider-menu">
-            <div id="slider">
-                <img class="img-slider animated fadeInUp" src="../images/slider/slider.jpg" />
-                <img class="img-slider animated fadeInUp hidden" src="images/slider2.jpg" />
-                <img class="img-slider animated fadeInUp hidden" src="images/slider3.jpg" />
-                <img class="img-slider animated fadeInUp hidden" src="images/slider4.jpg" />
+            <div id="slider1">
+                <img class="img-slider1 " src="images/slider/slider.jpg" />
+                <img class="img-slider1 " src="images/slider/slider.jpg" />
                 <span class="back"><</span>
                 <span class="next">></span>
             </div>
@@ -123,7 +121,14 @@
        
     </header>
 
-    <?php include $fileName; ?>
+    <section class="home">
+
+        <div id="slider" >
+            <img class="img-slider" src="images/slide/1.jpg">
+            <img class="img-slider" src="images/slide/2.jpg">
+            <img class="img-slider" src="images/slide/3.jpg">
+        </div>
+    </section>
     <footer>
         <ul>
             <li><a href="">Suscribete</a></li>
