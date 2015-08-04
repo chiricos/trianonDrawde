@@ -17,4 +17,11 @@ $(document).ready(function(){
     {
        $('.pop-up').removeClass('hidden');
     });
+
+
+    $('.img-slider1').on('click',function()
+    {
+       $('.product1').removeClass('hidden');
+       $('.product').addClass('hidden');
+    });
 });

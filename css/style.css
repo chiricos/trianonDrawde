@@ -362,7 +362,10 @@ footer a{
  ============================================================*/
 
 .pop-up{
-    background: rgba(0, 0, 0, 0.73);
+    -webkit-animation-name: slider2;
+    animation-name: slider2;
+    animation-duration: 2s;
+    background:rgba(0, 0, 0, 0.9);
     left: 0;
     height: 100%;
     overflow: scroll;
@@ -502,6 +505,7 @@ SLIDER
     -webkit-animation-name: slideMenu;
     animation-name: slideMenu;
     animation-duration: 2s;
+    cursor: pointer;
     display: none;
     width: 80%;
 }
@@ -576,6 +580,55 @@ SLIDER
     font-size: 45px;
     position: relative;
     top: -45px;
+}
+
+/*=====================================
+PRODUCTOS
+=====================================*/
+
+.product1{
+    -webkit-animation-name: slider2;
+    animation-name: slider2;
+    animation-duration: 2s;
+}
+
+.content-product{
+    display: inline-block;
+    width: 55%;
+    text-align: center;
+}
+
+.content-product img{
+    margin-top: 48px;
+    width: 75%;
+}
+
+.content-product-description{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content-product-description :hover{
+    color: rgba(0, 0, 0, 0.57);
+}
+
+.content-product-description p, .content-product-description select, .content-product-description label, .content-product-description button{
+    color: black;
+}
+
+.product-color{
+    background: #E44A74;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.product-color-text{
+    display: inline-block;
+}
+
+.product-color-figure{
+    margin: 0;
 }
 
 
