@@ -48,12 +48,12 @@
         <nav>
             <div class="nav-menu">
                 <ul>
-                    <li><a href="">Mujer</a></li>
-                    <li><a href="">Hombre</a></li>
-                    <li><a href="">Tiendas</a></li>
-                    <li><a href="">Universo Trianon</a></li>
-                    <li><a href="">Ventas corporativas</a></li>
-                    <li><a href="">Distribuidores</a></li>
+                    <li><a >Mujer</a></li>
+                    <li><a >Hombre</a></li>
+                    <li><a >Tiendas</a></li>
+                    <li><a >Universo Trianon</a></li>
+                    <li><a >Ventas corporativas</a></li>
+                    <li><a >Distribuidores</a></li>
                 </ul>
 
             </div>
@@ -64,7 +64,7 @@
 <div class="nav-footer">
 </div>
 
-<div class="pop-up">
+<div class="pop-up hidden">
     <div class="pop-up-menu">
         <div class="pop-up-nav-menu">
             <ul>
@@ -111,8 +111,8 @@
             <div id="slider1">
                 <img class="img-slider1 " src="images/slider/slider.jpg" />
                 <img class="img-slider1 " src="images/slider/slider.jpg" />
-                <span class="back"><</span>
-                <span class="next">></span>
+                <span class="back1"><</span>
+                <span class="next1">></span>
             </div>
         </div>
     </div>
@@ -127,8 +127,15 @@
             <img class="img-slider" src="images/slide/1.jpg">
             <img class="img-slider" src="images/slide/2.jpg">
             <img class="img-slider" src="images/slide/3.jpg">
+            <span class="back"><</span>
+            <span class="next">></span>
+            <div class="slider-show">
+                <span >></span>
+            </div>
         </div>
     </section>
+
+
     <footer>
         <ul>
             <li><a href="">Suscribete</a></li>
@@ -137,13 +144,21 @@
             <li><a href="">Contactanos</a></li>
         </ul>
     </footer>
-    
-    <div>
-        <img src="../images/bolso.png" />
-    </div>
-    <div>
-        <img src="../images/vaticano.jpg">
-    </div>
+
+    <section class="home">
+
+        <div id="slider2" >
+            <img class="img-slider2" src="images/bolso.png">
+            <img class="img-slider2" src="images/vaticano.jpg">
+        </div>
+    </section>
+    <section class="home">
+
+        <div id="slider3" >
+            <img class="img-slider2" src="images/vaticano.jpg">
+            <img class="img-slider2" src="images/bolso.png">
+        </div>
+    </section>
 </main>
 
 </body>

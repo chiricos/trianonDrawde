@@ -310,6 +310,10 @@ nav li a{
     width: 100%;
 }
 
+nav li a{
+    cursor: pointer;
+}
+
 
 /*============================================================
     FOOTER
@@ -321,6 +325,7 @@ footer{
     color: white;
     text-align: center;
     max-width: 1080px;
+    margin-top: -85px;
     width: 100%;
 }
 footer li{
@@ -427,22 +432,13 @@ footer a{
 }
 
 .flecha_abajo{
-    left: 42px;
+    left: 0px;
     position: relative;
     width: 27px;
 }
 
-.back{
-    cursor: pointer;
-    position: relative;
-    top: -120px;
-}
-
-.next{
-    cursor: pointer;
-    float: right;
-    position: relative;
-    top: -120px;
+.pop-up-nav-menu a:hover{
+    color: black;
 }
 
 /*===========================
@@ -492,4 +488,171 @@ SLIDER
 #title_slider img {
     display: none;
 
+}
+
+.img-slider{
+    display: none;
+}
+
+#slider1{
+    text-align: center;
+}
+
+.img-slider1{
+    -webkit-animation-name: slideMenu;
+    animation-name: slideMenu;
+    animation-duration: 2s;
+    display: none;
+    width: 80%;
+}
+
+.img-slider{
+    -webkit-animation-name: slider1;
+    animation-name: slider1;
+    animation-duration: 2s;
+}
+
+.img-slider2{
+    display: none;
+    -webkit-animation-name: slider2;
+    animation-name: slider2;
+    animation-duration: 2s;
+}
+
+.back1{
+    float: left;
+}
+
+.next1{
+    float: right;
+}
+
+.back1, .next1{
+    color: rgba(0, 0, 0, 0.49);
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: initial;
+    position: relative;
+    top: 60px;
+}
+
+.back , .next{
+    color: rgba(0, 0, 0, 0.49);
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: initial;
+    position: relative;
+    top: -280px;
+    margin: 0 10px;
+}
+
+.back{
+    float: left;
+}
+
+.next{
+    float: right;
+}
+
+.slider-show{
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 27px;
+    display: block;
+    height: 50px;
+    left: 93%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -75px;
+    transform: rotate(90deg);
+    text-align: center;
+    width: 50px;
+
+}
+
+.slider-show span{
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    font-size: 45px;
+    position: relative;
+    top: -45px;
+}
+
+
+/*=====================================
+ANIMACIONES
+=====================================*/
+
+@-webkit-keyframes slideMenu {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px)
+    }
+}
+
+@keyframes slideMenu {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slider1 {
+    0% {
+        transform: perspective(2000px) rotateY(90deg);
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(2000px) rotateY(-10deg);
+    }
+    70% {
+        transform: perspective(2000px) rotateY(10deg);
+    }
+    100% {
+        transform: perspective(2000px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slider1 {
+    0% {
+        transform: perspective(2000px) rotateY(90deg);
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(2000px) rotateY(-10deg);
+    }
+    70% {
+        transform: perspective(2000px) rotateY(10deg);
+    }
+    100% {
+        transform: perspective(2000px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slider2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slider2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

@@ -12,4 +12,9 @@ $(document).ready(function(){
         }
         i=0;
     });
+
+    $('nav li a').on('click',function()
+    {
+       $('.pop-up').removeClass('hidden');
+    });
 });
