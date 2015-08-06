@@ -420,6 +420,14 @@ footer a{
     width: 370px;
 }
 
+.slider-menu-line{
+    display: inline-block;
+    margin: 62px 38px;
+    padding: 34px 0px 0 0;
+    vertical-align: top;
+    width: 370px;
+}
+
 .pop-up-menu section a{
     display: block;
     font-size: 13px;

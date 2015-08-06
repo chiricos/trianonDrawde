@@ -8,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
     <!-- Style -->
-    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
     <link rel="stylesheet" href="css/normalize.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 
     <!-- Style <script src="{{asset('js/prefixfree.min.js')}}"></script>-->
     <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -68,7 +69,7 @@
     <div class="pop-up-menu">
         <div class="pop-up-nav-menu">
             <ul>
-                <li><a class="pop-up-hover" href="">Mujer</a></li>
+                <li><a class="pop-up-hover" >Mujer</a></li>
                 <li><a href="">Hombre</a></li>
                 <li><a href="">Tiendas</a></li>
                 <li><a href="">Universo Trianon</a></li>
@@ -81,43 +82,153 @@
             <img class="flecha_abajo" src="../images/flecha_abajo.png">
         </figure>
         <div class="product">
-            <section>
+            <section id="woman_product">
                 <p>PRODUCTOS</p>
                 <li>
-                    <a href="">Tarjeteros</a>
-                    <a href="">Bolsos</a>
-                    <a href="">Portaipad</a>
-                    <a href="">Portacelular</a>
-                    <a href="">Portachequero</a>
-                    <a href="">Portadocumentos</a>
-                    <a href="">Portallavero</a>
-                    <a href="">Llaveros</a>
-                    <a href="">Todos</a>
+                    <a >Tarjeteros</a>
+                    <a >Bolsos</a>
+                    <a >Portaipad</a>
+                    <a >Portacelular</a>
+                    <a >Portachequero</a>
+                    <a >Portadocumentos</a>
+                    <a >Portallavero</a>
+                    <a >Llaveros</a>
+                    <a >Todos</a>
                 </li>
             </section>
-            <section>
+            <section id="woman_line">
                 <p>LINEAS RENACER</p>
                 <li>
-                    <a href="">Venecia</a>
-                    <a href="">Florencia</a>
-                    <a href="">Milán</a>
-                    <a href="">Nápoles</a>
-                    <a href="">Vaticano</a>
-                    <a href="">Bologña</a>
-                    <a href="">Verona</a>
-                    <a href="">Turin</a>
+                    <a >Venecia</a>
+                    <a >Florencia</a>
+                    <a >Milán</a>
+                    <a >Nápoles</a>
+                    <a >Vaticano</a>
+                    <a >Bologña</a>
+                    <a >Verona</a>
+                    <a >Turin</a>
                 </li>
             </section>
-            <div class="slider-menu">
-                <div id="slider1">
-                    <img class="img-slider1 " src="images/slider/slider.jpg" />
-                    <img class="img-slider1 " src="images/slider/slider.jpg" />
-                    <span class="back1"><</span>
-                    <span class="next1">></span>
+
+            <div class="slider-menu ">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="slider-menu-line">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img class="img-slider1 " src="images/bolso.png" />
+                        </li>
+                        <li>
+                            <img class="img-slider1 " src="images/bolso.jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="slider-menu-line">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="slider-menu-line">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="slider-menu-line " id="hidden">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="slider-menu-line">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="slider-menu-line">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="slider-menu-line " id="hidden">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="slider-menu-line " id="hidden">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                        <li>
+                            <img class="img-slider1 " src="images/products/verona/product1.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-        <div class="product1 hidden">
+        <div class="line_products hidden">
             <figure class="content-product">
                 <img src="images/products/1.png">
             </figure>
@@ -149,11 +260,237 @@
             </div>
         </div>
 
+        <div class="line_products hidden">
+            <figure class="content-product">
+                <img src="images/products/1.png">
+            </figure>
+            <div class="content-product-description">
+                <p>Precio</p>
+                <p>$ 45.000</p>
+                <select>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </select>
+                <label>Cantidad</label>
+                <div>
+                    <figure class="product-color-figure">
+                        <span class="product-color"></span>
+                        <span class="product-color"></span>
+                        <p class="product-color-text">Color</p>
+                    </figure>
+                </div>
+                <div class="network">
+                    <a href="" ><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-twitter"></span></a>
+                    <a href=""><span class="icon-pinterest"></span></a>
+                    <a href=""><span class="icon-linkedin"></span></a>
+                    <a href=""><span class="icon-instagram-filled"></span></a>
+                </div>
+                <button>Compartir</button>
+            </div>
+        </div>
+
+        <div class="line_products hidden">
+            <figure class="content-product">
+                <img src="images/products/1.png">
+            </figure>
+            <div class="content-product-description">
+                <p>Precio</p>
+                <p>$ 45.000</p>
+                <select>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </select>
+                <label>Cantidad</label>
+                <div>
+                    <figure class="product-color-figure">
+                        <span class="product-color"></span>
+                        <span class="product-color"></span>
+                        <p class="product-color-text">Color</p>
+                    </figure>
+                </div>
+                <div class="network">
+                    <a href="" ><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-twitter"></span></a>
+                    <a href=""><span class="icon-pinterest"></span></a>
+                    <a href=""><span class="icon-linkedin"></span></a>
+                    <a href=""><span class="icon-instagram-filled"></span></a>
+                </div>
+                <button>Compartir</button>
+            </div>
+        </div>
+
+        <div class="line_products hidden">
+            <figure class="content-product">
+                <img src="images/products/1.png">
+            </figure>
+            <div class="content-product-description">
+                <p>Precio</p>
+                <p>$ 45.000</p>
+                <select>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </select>
+                <label>Cantidad</label>
+                <div>
+                    <figure class="product-color-figure">
+                        <span class="product-color"></span>
+                        <span class="product-color"></span>
+                        <p class="product-color-text">Color</p>
+                    </figure>
+                </div>
+                <div class="network">
+                    <a href="" ><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-twitter"></span></a>
+                    <a href=""><span class="icon-pinterest"></span></a>
+                    <a href=""><span class="icon-linkedin"></span></a>
+                    <a href=""><span class="icon-instagram-filled"></span></a>
+                </div>
+                <button>Compartir</button>
+            </div>
+        </div>
+
+        <div class="line_products hidden">
+            <figure class="content-product">
+                <img src="images/products/1.png">
+            </figure>
+            <div class="content-product-description">
+                <p>Precio</p>
+                <p>$ 45.000</p>
+                <select>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </select>
+                <label>Cantidad</label>
+                <div>
+                    <figure class="product-color-figure">
+                        <span class="product-color"></span>
+                        <span class="product-color"></span>
+                        <p class="product-color-text">Color</p>
+                    </figure>
+                </div>
+                <div class="network">
+                    <a href="" ><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-twitter"></span></a>
+                    <a href=""><span class="icon-pinterest"></span></a>
+                    <a href=""><span class="icon-linkedin"></span></a>
+                    <a href=""><span class="icon-instagram-filled"></span></a>
+                </div>
+                <button>Compartir</button>
+            </div>
+        </div>
+
+        <div class="line_products hidden">
+            <figure class="content-product">
+                <img src="images/products/1.png">
+            </figure>
+            <div class="content-product-description">
+                <p>Precio</p>
+                <p>$ 45.000</p>
+                <select>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </select>
+                <label>Cantidad</label>
+                <div>
+                    <figure class="product-color-figure">
+                        <span class="product-color"></span>
+                        <span class="product-color"></span>
+                        <p class="product-color-text">Color</p>
+                    </figure>
+                </div>
+                <div class="network">
+                    <a href="" ><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-twitter"></span></a>
+                    <a href=""><span class="icon-pinterest"></span></a>
+                    <a href=""><span class="icon-linkedin"></span></a>
+                    <a href=""><span class="icon-instagram-filled"></span></a>
+                </div>
+                <button>Compartir</button>
+            </div>
+        </div>
+
+        <div class="line_products hidden">
+            <figure class="content-product">
+                <img src="images/products/verona/product1.png">
+            </figure>
+            <div class="content-product-description">
+                <p>Precio</p>
+                <p>$ 45.000</p>
+                <select>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </select>
+                <label>Cantidad</label>
+                <div>
+                    <figure class="product-color-figure">
+                        <span class="product-color"></span>
+                        <span class="product-color"></span>
+                        <p class="product-color-text">Color</p>
+                    </figure>
+                </div>
+                <div class="network">
+                    <a href="" ><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-twitter"></span></a>
+                    <a href=""><span class="icon-pinterest"></span></a>
+                    <a href=""><span class="icon-linkedin"></span></a>
+                    <a href=""><span class="icon-instagram-filled"></span></a>
+                </div>
+                <button>Compartir</button>
+            </div>
+        </div>
+
+        <div class="line_products hidden">
+            <figure class="content-product">
+                <img src="images/products/1.png">
+            </figure>
+            <div class="content-product-description">
+                <p>Precio</p>
+                <p>$ 45.000</p>
+                <select>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </select>
+                <label>Cantidad</label>
+                <div>
+                    <figure class="product-color-figure">
+                        <span class="product-color"></span>
+                        <span class="product-color"></span>
+                        <p class="product-color-text">Color</p>
+                    </figure>
+                </div>
+                <div class="network">
+                    <a href="" ><span class="icon-facebook"></span></a>
+                    <a href=""><span class="icon-twitter"></span></a>
+                    <a href=""><span class="icon-pinterest"></span></a>
+                    <a href=""><span class="icon-linkedin"></span></a>
+                    <a href=""><span class="icon-instagram-filled"></span></a>
+                </div>
+                <button>Compartir</button>
+            </div>
+        </div>
+
+
     </div>
 </div>
 </div>
        
     </header>
+
 
     <section class="home">
 
@@ -182,7 +519,7 @@
     <section class="home">
 
         <div id="slider2" >
-            <img class="img-slider2" src="images/bolso.png">
+            <img class="img-slider2" src="images/bolso.jpg">
             <img class="img-slider2" src="images/vaticano.jpg">
         </div>
     </section>
@@ -190,7 +527,7 @@
 
         <div id="slider3" >
             <img class="img-slider2" src="images/vaticano.jpg">
-            <img class="img-slider2" src="images/bolso.png">
+            <img class="img-slider2" src="images/bolso.jpg">
         </div>
     </section>
 </main>
